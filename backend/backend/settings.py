@@ -1,3 +1,8 @@
+"""
+Настройки проекта Taski.
+
+Содержит конфигурацию базы данных, Django-приложений, middleware и т.д.
+"""
 from pathlib import Path
 import os
 
@@ -9,7 +14,7 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','84.201.166.95', 'taskitaski123.ddns.net']
+ALLOWED_HOSTS = ['localhost', '84.201.166.95', 'taskitaski123.ddns.net']
 
 
 # Application definition
@@ -69,7 +74,7 @@ DATABASES = {
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', ''),
         'HOST': os.getenv('DB_HOST', ''),
         'PORT': os.getenv('DB_PORT', 5432)
-        }
+    }
 }
 
 
