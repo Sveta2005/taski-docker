@@ -3,8 +3,9 @@
 
 Содержит конфигурацию базы данных, Django-приложений, middleware и т.д.
 """
-from pathlib import Path
+
 import os
+from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_URL = '/static/'

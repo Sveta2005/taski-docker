@@ -1,6 +1,7 @@
 """Модуль сериализаторов приложения API проекта Taski."""
 
 from rest_framework import serializers
+
 from .models import Task
 
 
